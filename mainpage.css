@@ -1,0 +1,293 @@
+* {
+  margin: auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: #2f2f2f;
+  color: #f3f3f3;
+}
+.mySlides {
+  display: none;
+}
+.slideshow-container img {
+  vertical-align: middle;
+  height: 400px;
+}
+.slideshow-container {
+  position: relative;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 5px 2px;
+  background-color: #bbb;
+  border-radius: 20%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.header img {
+  cursor: pointer;
+}
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(71, 60, 60, 0.842);
+  height: 60px;
+}
+.iconSite img {
+  height: 50px;
+  width: 50px;
+  margin: 5px 0 0 10px;
+}
+.dropdown img {
+  height: 35px;
+  width: 35px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 85%;
+  top: -40px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: rgba(37, 30, 30, 0.651);
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: rgb(11, 112, 20);
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 40px 3px;
+  padding: 12px 22px;
+  background-color: #d6cdcd;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(11, 112, 20);
+  color: #000000;
+}
+.iconBasket img {
+  height: 35px;
+  width: 35px;
+}
+.iconBasket {
+  margin-top: -40px;
+  margin-left: 92%;
+}
+.filterProducts {
+  display: none;
+  width: 255px;
+  margin: 30px 15px 0 25px;
+  padding: 10px 10px 5px 10px;
+  border: 1px solid #eee;
+  background: white;
+  font-family: "Open Sans";
+  overflow: hidden;
+  transition: 0.4s linear;
+}
+.filterProducts :visited {
+  color: #4caf50;
+}
+.show {
+  display: inline-block;
+}
+.product-img {
+  transition: 1s ease-in-out;
+}
+.product-img:hover {
+  transform: scale(1.1);
+}
+.add-to-cart img:hover {
+  transform: scale(1.1);
+}
+.add-to-links img:hover {
+  transform: scale(1.1);
+}
+.product-img img {
+  display: block;
+  width: 240px;
+  height: 240px;
+}
+.product-list {
+  margin-top: 15px;
+}
+.product-list h3 {
+  font-weight: 700;
+  color: #4caf50;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 2;
+}
+.productName {
+  cursor: pointer;
+}
+.productName:hover {
+  color: #226824;
+}
+.price {
+  color: #080808;
+  display: block;
+  margin-bottom: 12px;
+}
+/*stars */
+.rating-area {
+  overflow: hidden;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 25px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 30px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+  position: relative;
+}
+.actions {
+  border-top: 1px solid #eee;
+  padding-top: 4px;
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+}
+.add-to-cart,
+.add-to-links {
+  float: right;
+}
+.cart-button img {
+  width: 32px;
+  height: 32px;
+  margin: 5px 10px;
+}
+.cart-button {
+  text-decoration: none;
+}
+.comments img {
+  margin: 5px 10px;
+}
+.podval {
+  margin-top: 20%;
+  max-width: 100%;
+  height: 300px;
+  display: block;
+  background-color: rgb(11, 112, 20);
+}
+.sidenav a:hover,
+a:focus,
+a:active {
+  color: #00afee;
+  outline: none;
+}
+.podval a:hover,
+a:focus,
+a:active {
+  color: #00afee;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+  background-color: transparent;
+}
+.podval a {
+  color: rgb(184, 179, 179);
+}
+li {
+  list-style-type: none;
+}
+.titleNetworks {
+  margin: 0 12%;
+  font-size: 1.4em;
+  color: rgb(184, 179, 179);
+}
+.inf {
+  box-sizing: border-box;
+  padding-top: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+.socnetwork {
+  font-family: sans-serif;
+  padding-left: 70%;
+  margin-top: -10%;
+  box-sizing: border-box;
+}
+.fb2 {
+  display: none;
+}
+.icons:hover .fb2 {
+  display: inline-block;
+}
+.fb {
+  display: inline-block;
+}
+.icons:hover .fb {
+  display: none;
+}
+.icons {
+  padding-left: 11%;
+  margin-top: 4%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.ttt {
+  display: block;
+}
+.inf2 {
+  margin-top: 14%;
+  margin-left: 40%;
+  display: block;
+  box-sizing: border-box;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: rgb(184, 179, 179);
+}

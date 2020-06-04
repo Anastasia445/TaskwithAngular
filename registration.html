@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="registration.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/icon.jpg" type="image/png" />
+    <title>Smartphone Store</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="iconSite" title="Smartphone Store">
+        <a href="mainpage.html">
+          <img src="images/icon.jpg" />
+        </a>
+      </div>
+      <div class="headerTitle">
+        <a>Smartphone Store - лучший магазин смартфонов</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Регистрация</h1>
+      <p>Пожалуйста, заполните эти поля, чтобы создать учетную запись.</p>
+      <hr />
+      <form>
+        <div class="form-group">
+          <label for="login"><b>Введите ваше имя</b></label>
+          <input
+            type="text"
+            placeholder="Введите ваше имя(логин)"
+            id="login"
+            name="login"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password"><b>Введите пароль</b></label>
+          <input
+            type="password"
+            placeholder="Введите пароль"
+            id="password"
+            name="password"
+          />
+        </div>
+        <hr />
+        <p>
+          Создавая учетную запись вы соглашаетесь с нашими условиями
+          <a href="">Terms & Privacy</a>.
+        </p>
+        <div class="form-group form-check text-right">
+          <button
+            type="submit"
+            class="registerbtn"
+            id="regestration"
+            onclick="reg()"
+          >
+            Зарегистрироваться
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="header_slideshow.js"></script>
+    <!--   <div class="container signin">
+      <p>У вас уже есть аккаунт? <a href="loginAccount.html">Войти</a>.</p>
+    </div> -->
+  </body>
+</html>

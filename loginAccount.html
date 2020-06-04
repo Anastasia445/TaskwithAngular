@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="loginAccount.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/icon.jpg" type="image/png" />
+    <script src="header_slideshow.js"></script>
+    <title>Smartphone Store</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="iconSite" title="Smartphone Store">
+        <a href="mainpage.html">
+          <img src="images/icon.jpg" />
+        </a>
+      </div>
+      <div class="headerTitle">
+        <a>Smartphone Store - лучший магазин смартфонов</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Вход</h1>
+      <p>Пожалуйста, заполните эти поля, чтобы войти в личный кабинет.</p>
+      <hr />
+  
+        <div class="form-group">
+          <label for="userAccountLogin"><b>Введите Email</b></label>
+          <input
+            type="text"
+            placeholder="Введите ваш логин"
+            id="userAccountLogin"
+            name="userAccountLogin"
+          />
+        </div>
+        <div class="form-group">
+          <label for="userAccountPassword"><b>Пароль</b></label>
+          <input
+            id="userAccountPassword"
+            type="password"
+            placeholder="Введите пароль"
+           name="userAccountPassword"
+          />
+        </div>
+        <hr />
+        <p>
+          Создавая учетную запись вы соглашаетесь с нашими условиями
+          <a href="">Terms & Privacy</a>.
+        </p>
+        <div class="form-group form-check text-right">
+          <button 
+          type="button"
+           class="registerbtn"
+            id="userAccount" 
+            onclick="userAccount()">
+            Войти
+          </button>
+        </div>
+  
+    </div>
+      <div class="container signin">
+        <p>
+          Вы ещё не зарегестрировались?
+          <a href="registration.html">Зарегестрироваться</a>.
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
+  

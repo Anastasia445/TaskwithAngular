@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="basket.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="header_slideshow.js"></script>
+    <link rel="shortcut icon" href="images/icon.jpg" type="image/png" />
+    <title>Smartphone Store</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="iconSite" title="Smartphone Store">
+        <a href="mainpage.html">
+          <img src="images/icon.jpg" />
+        </a>
+      </div>
+      <div class="headerTitle">
+        <a>Smartphone Store - лучший магазин смартфонов</a>
+      </div>
+    </div>
+
+    <div>
+      <button title="Назад" class="back">
+        <a href="mainpage.html">
+          Вернуть к покупкам
+        </a>
+      </button>
+    </div>
+    <div id="huawei_P40_lite" class="row">
+      <div class="product-img">
+        <img src="huawei/huawei_P40_lite.jpg" />
+      </div>
+      <div class="product-list">
+        <h3>
+          Huawei P40 lite
+        </h3>
+        <br />
+        <span class="price">759,00 р.</span>
+      </div>
+      <div onclick="deleteProductBasket('huawei_P40_lite')" class="close">
+        <img src="close.png" />
+      </div>
+    </div>
+    <div id="huawei_P40_Pro" class="row">
+      <div class="product-img">
+        <img src="huawei/huawei_P40_Pro.jpg" />
+      </div>
+      <div class="product-list">
+        <h3>
+          Huawei P40 Pro
+        </h3>
+        <br />
+        <span class="price">2380,00 р.</span>
+      </div>
+      <div onclick=" deleteProductBasket('huawei_P40_Pro')" class="close">
+        <img src="close.png" />
+      </div>
+    </div>
+    <div>
+      <button title="Перейти к оформлению" class="next">
+        <a href="">
+          Оформить товар
+        </a>
+      </button>
+    </div>
+  </body>
+</html>

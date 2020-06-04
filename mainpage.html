@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="mainpage.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="header_slideshow.js"></script>
+    <link rel="shortcut icon" href="images/icon.jpg" type="image/png" />
+    <title>Smartphone Store</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="iconSite" title="Smartphone Store">
+        <img src="images/icon.jpg" />
+      </div>
+      <div class="iconBasket" title="Корзина">
+        <img src="images/iconBasket.png" />
+      </div>
+      <div class="dropdown">
+        <img src="images/iconUserAccount.png" />
+        <div class="dropdown-content">
+          <a href="registration.html">Регистрация</a>
+          <!-- <a href="registration.html">Вход</a>-->
+        </div>
+      </div>
+    </div>
+    <!-- slideshow -->
+    <div class="ttt">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="images/slide1.jpg" style="width: 100%;" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/slide2.jpg" style="width: 100%;" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/slide3.jpg" style="width: 100%;" />
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <script>
+        showSlides();
+      </script>
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterProducts('all')">
+          Показать всё
+        </button>
+        <button class="btn" onclick="filterProducts('samsung')">Samsung</button>
+        <button class="btn" onclick="filterProducts('apple')">Apple</button>
+        <button class="btn" onclick="filterProducts('huawei')">Huawei</button>
+        <button class="btn" onclick="filterProducts('xiaomi')">Xiaomi</button>
+        <button class="btn" onclick="filterProducts('2020')">2020г.</button>
+        <button class="btn" onclick="filterProducts('2019')">2019г.</button>
+        <button class="btn" onclick="filterProducts('2018')">2018г.</button>
+        <button class="btn" onclick="filterProducts('2017')">2017г.</button>
+        <button class="btn" onclick="filterProducts('2016')">2016г.</button>
+        <button class="btn" onclick="filterProducts('android')">Android</button>
+        <button class="btn" onclick="filterProducts('ios')">Apple iOS</button>
+      </div>
+
+      <div class="filterProducts huawei android 2020">
+        <div class="rating-area">
+          <input type="radio" id="Huawei1_5" name="Huawei1" value="5" />
+          <label for="Huawei1_5"></label>
+          <input type="radio" id="Huawei1_4" name="Huawei1" value="4" />
+          <label for="Huawei1_4"></label>
+          <input type="radio" id="Huawei1_3" name="Huawei1" value="3" />
+          <label for="Huawei1_3"></label>
+          <input type="radio" id="Huawei1_2" name="Huawei1" value="2" />
+          <label for="Huawei1_2"></label>
+          <input type="radio" id="Huawei1_1" name="Huawei1" value="1" />
+          <label for="Huawei1_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="huaweipages/Huawei_P40_lite.html">
+            <img src="huawei/huawei_P40_lite.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="huaweipages/Huawei_P40_lite.html" class="productName"
+              >Huawei P40 lite</a
+            >
+          </h3>
+          <span class="price">759,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="basket.html" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="huaweipages/Huawei_P40_lite.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Huawei1" class="filterProducts huawei android 2020">
+        <div class="rating-area">
+          <input type="radio" id="Huawei2_5" name="Huawei2" value="5" />
+          <label for="Huawei2_5"></label>
+          <input type="radio" id="Huawei2_4" name="Huawei2" value="4" />
+          <label for="Huawei2_4"></label>
+          <input type="radio" id="Huawei2_3" name="Huawei2" value="3" />
+          <label for="Huawei2_3"></label>
+          <input type="radio" id="Huawei2_2" name="Huawei2" value="2" />
+          <label for="Huawei2_2"></label>
+          <input type="radio" id="Huawei2_1" name="Huawei2" value="1" />
+          <label for="Huawei2_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="huaweipages/Huawei_P40_Pro.html">
+            <img src="huawei/huawei_P40_Pro.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="huaweipages/Huawei_P40_Pro.html" class="productName"
+              >Huawei P40 Pro</a
+            >
+          </h3>
+          <span class="price">2380,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a
+                onclick="addProductBasket('Huawei1')"
+                href="basket.html"
+                class="cart-button"
+              >
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="huaweipages/Huawei_P40_Pro.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts huawei android 2019">
+        <div class="rating-area">
+          <input type="radio" id="Huawei3_5" name="Huawei3" value="5" />
+          <label for="Huawei3_5"></label>
+          <input type="radio" id="Huawei3_4" name="Huawei3" value="4" />
+          <label for="Huawei3_4"></label>
+          <input type="radio" id="Huawei3_3" name="Huawei3" value="3" />
+          <label for="Huawei3_3"></label>
+          <input type="radio" id="Huawei3_2" name="Huawei3" value="2" />
+          <label for="Huawei3_2"></label>
+          <input type="radio" id="Huawei3_1" name="Huawei3" value="1" />
+          <label for="Huawei3_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="huaweipages/Huawei_P30_lite.html">
+            <img src="huawei/huawei_P30_lite.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="huaweipages/Huawei_P30_lite.html" class="productName"
+              >Huawei P30 Lite</a
+            >
+          </h3>
+          <span class="price">490,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="huaweipages/Huawei_P30_lite.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts huawei android 2019">
+        <div class="rating-area">
+          <input type="radio" id="Huawei4_5" name="Huawei4" value="5" />
+          <label for="Huawei4_5"></label>
+          <input type="radio" id="Huawei4_4" name="Huawei4" value="4" />
+          <label for="Huawei4_4"></label>
+          <input type="radio" id="Huawei4_3" name="Huawei4" value="3" />
+          <label for="Huawei4_3"></label>
+          <input type="radio" id="Huawei4_2" name="Huawei4" value="2" />
+          <label for="Huawei4_2"></label>
+          <input type="radio" id="Huawei4_1" name="Huawei4" value="1" />
+          <label for="Huawei4_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="huaweipages/Huawei-P30-Pro.html">
+            <img src="huawei/Huawei-p30-pro.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="huaweipages/Huawei-P30-Pro.html" class="productName"
+              >Huawei P30 Pro</a
+            >
+          </h3>
+          <span class="price">1546,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="huaweipages/Huawei-P30-Pro.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts huawei android 2018">
+        <div class="rating-area">
+          <input type="radio" id="Huawei5_5" name="Huawei5" value="5" />
+          <label for="Huawei5_5"></label>
+          <input type="radio" id="Huawei5_4" name="Huawei5" value="4" />
+          <label for="Huawei5_4"></label>
+          <input type="radio" id="Huawei5_3" name="Huawei5" value="3" />
+          <label for="Huawei5_3"></label>
+          <input type="radio" id="Huawei5_2" name="Huawei5" value="2" />
+          <label for="Huawei5_2"></label>
+          <input type="radio" id="Huawei5_1" name="Huawei5" value="1" />
+          <label for="Huawei5_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="huaweipages/Huawei-mate-20-lite.html">
+            <img src="huawei/Huawei-mate-20-lite.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="huaweipages/Huawei-mate-20-lite.html" class="productName"
+              >Huawei Mate 20 Lite</a
+            >
+          </h3>
+          <span class="price"> 499,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="huaweipages/Huawei-mate-20-lite.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Apple -->
+      <div class="filterProducts apple ios 2018">
+        <div class="rating-area">
+          <input type="radio" id="Apple1_5" name="Apple1" value="5" />
+          <label for="Apple1_5"></label>
+          <input type="radio" id="Apple1_4" name="Apple1" value="4" />
+          <label for="Apple1_4"></label>
+          <input type="radio" id="Apple1_3" name="Apple1" value="3" />
+          <label for="Apple1_3"></label>
+          <input type="radio" id="Apple1_2" name="Apple1" value="2" />
+          <label for="Apple1_2"></label>
+          <input type="radio" id="Apple1_1" name="Apple1" value="1" />
+          <label for="Apple1_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="applepages/Apple-iPhone-XS.html">
+            <img src="apple/Apple-iPhone-XS.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="applepages/Apple-iPhone-XS.html" class="productName"
+              >Apple iPhone XS</a
+            >
+          </h3>
+          <span class="price"> 1999,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="applepages/Apple-iPhone-XS.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts apple ios 2016">
+        <div class="rating-area">
+          <input type="radio" id="Apple2_5" name="Apple2" value="5" />
+          <label for="Apple2_5"></label>
+          <input type="radio" id="Apple2_4" name="Apple2" value="4" />
+          <label for="Apple2_4"></label>
+          <input type="radio" id="Apple2_3" name="Apple2" value="3" />
+          <label for="Apple2_3"></label>
+          <input type="radio" id="Apple2_2" name="Apple2" value="2" />
+          <label for="Apple2_2"></label>
+          <input type="radio" id="Apple2_1" name="Apple2" value="1" />
+          <label for="Apple2_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="applepages/Apple-iPhone-7.html">
+            <img src="apple/Apple-iPhone-7.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="applepages/Apple-iPhone-7.html" class="productName"
+              >Apple iPhone 7</a
+            >
+          </h3>
+          <span class="price">759,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a href="applepages/Apple-iPhone-7.html#comment" class="comments">
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts apple ios 2019">
+        <div class="rating-area">
+          <input type="radio" id="Apple3_5" name="Apple3" value="5" />
+          <label for="Apple3_5"></label>
+          <input type="radio" id="Apple3_4" name="Apple3" value="4" />
+          <label for="Apple3_4"></label>
+          <input type="radio" id="Apple3_3" name="Apple3" value="3" />
+          <label for="Apple3_3"></label>
+          <input type="radio" id="Apple3_2" name="Apple3" value="2" />
+          <label for="Apple3_2"></label>
+          <input type="radio" id="Apple3_1" name="Apple3" value="1" />
+          <label for="Apple3_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="applepages/Apple-iPhone-11.html">
+            <img src="apple/Apple-iPhone-11.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="applepages/Apple-iPhone-11.html" class="productName"
+              >Apple iPhone 11</a
+            >
+          </h3>
+          <span class="price">1999,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="applepages/Apple-iPhone-11.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts apple ios 2018">
+        <div class="rating-area">
+          <input type="radio" id="Apple4_5" name="Apple4" value="5" />
+          <label for="Apple4_5"></label>
+          <input type="radio" id="Apple4_4" name="Apple4" value="4" />
+          <label for="Apple4_4"></label>
+          <input type="radio" id="Apple4_3" name="Apple4" value="3" />
+          <label for="Apple4_3"></label>
+          <input type="radio" id="Apple4_2" name="Apple4" value="2" />
+          <label for="Apple4_2"></label>
+          <input type="radio" id="Apple4_1" name="Apple4" value="1" />
+          <label for="Apple4_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="applepages/Apple_iphone_XR.html">
+            <img src="apple/Apple_iphone_xr.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="applepages/Apple_iphone_XR.html" class="productName"
+              >Apple iPhone XR</a
+            >
+          </h3>
+          <span class="price">1470,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="applepages/Apple_iphone_XR.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts apple ios 2017">
+        <div class="rating-area">
+          <input type="radio" id="Apple5_5" name="Apple5" value="5" />
+          <label for="Apple5_5"></label>
+          <input type="radio" id="Apple5_4" name="Apple5" value="4" />
+          <label for="Apple5_4"></label>
+          <input type="radio" id="Apple5_3" name="Apple5" value="3" />
+          <label for="Apple5_3"></label>
+          <input type="radio" id="Apple5_2" name="Apple5" value="2" />
+          <label for="Apple5_2"></label>
+          <input type="radio" id="Apple5_1" name="Apple5" value="1" />
+          <label for="Apple5_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="applepages/Apple-iPhone-X.html">
+            <img src="apple/Apple-iPhone-X.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="applepages/Apple-iPhone-X.html" class="productName"
+              >Apple iPhone X</a
+            >
+          </h3>
+          <span class="price">1790,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a href="applepages/Apple-iPhone-X.html#comment" class="comments">
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Samsung -->
+      <div class="filterProducts samsung android 2019">
+        <div class="rating-area">
+          <input type="radio" id="Samsung1_5" name="Sams1" value="5" />
+          <label for="Samsung1_5"></label>
+          <input type="radio" id="Samsung1_4" name="Sams1" value="4" />
+          <label for="Samsung1_4"></label>
+          <input type="radio" id="Samsung1_3" name="Sams1" value="3" />
+          <label for="Samsung1_3"></label>
+          <input type="radio" id="Samsung1_2" name="Sams1" value="2" />
+          <label for="Samsung1_2"></label>
+          <input type="radio" id="Samsung1_1" name="Sams1" value="1" />
+          <label for="Samsung1_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="samsungpages/Samsung-Galaxy-A51.html">
+            <img src="samsung/Samsung-Galaxy-A51.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="samsungpages/Samsung-Galaxy-A51.html" class="productName"
+              >Samsung Galaxy A51</a
+            >
+          </h3>
+          <span class="price"> 594,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="samsungpages/Samsung-Galaxy-A51.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts samsung android 2019">
+        <div class="rating-area">
+          <input type="radio" id="Samsung2_5" name="Sams2" value="5" />
+          <label for="Samsung2_5"></label>
+          <input type="radio" id="Samsung2_4" name="Sams2" value="4" />
+          <label for="Samsung2_4"></label>
+          <input type="radio" id="Samsung2_3" name="Sams2" value="3" />
+          <label for="Samsung2_3"></label>
+          <input type="radio" id="Samsung2_2" name="Sams2" value="2" />
+          <label for="Samsung2_2"></label>
+          <input type="radio" id="Samsung2_1" name="Sams2" value="1" />
+          <label for="Samsung2_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="samsungpages/Samsung-Galaxy-S10e.html">
+            <img src="samsung/Samsung-Galaxy-S10e.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="samsungpages/Samsung-Galaxy-S10e.html" class="productName">
+              Samsung Galaxy S10e
+            </a>
+          </h3>
+          <span class="price"> 1269,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="samsungpages/Samsung-Galaxy-S10e.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts samsung android 2020">
+        <div class="rating-area">
+          <input type="radio" id="Samsung3_5" name="Sams3" value="5" />
+          <label for="Samsung3_5"></label>
+          <input type="radio" id="Samsung3_4" name="Sams3" value="4" />
+          <label for="Samsung3_4"></label>
+          <input type="radio" id="Samsung3_3" name="Sams3" value="3" />
+          <label for="Samsung3_3"></label>
+          <input type="radio" id="Samsung3_2" name="Sams3" value="2" />
+          <label for="Samsung3_2"></label>
+          <input type="radio" id="Samsung3_1" name="Sams3" value="1" />
+          <label for="Samsung3_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="samsungpages/Samsung-Galaxy-S20+.html">
+            <img src="samsung/Samsung-Galaxy-S20+.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="samsungpages/Samsung-Galaxy-S20+.html" class="productName"
+              >Samsung Galaxy S20+</a
+            >
+          </h3>
+          <span class="price"> 2099,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="samsungpages/Samsung-Galaxy-S20+.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts samsung android 2019">
+        <div class="rating-area">
+          <input type="radio" id="Samsung4_5" name="Sams4" value="5" />
+          <label for="Samsung4_5"></label>
+          <input type="radio" id="Samsung4_4" name="Sams4" value="4" />
+          <label for="Samsung4_4"></label>
+          <input type="radio" id="Samsung4_3" name="Sams4" value="3" />
+          <label for="Samsung4_3"></label>
+          <input type="radio" id="Samsung4_2" name="Sams4" value="2" />
+          <label for="Samsung4_2"></label>
+          <input type="radio" id="Samsung4_1" name="Sams4" value="1" />
+          <label for="Samsung4_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="samsungpages/Samsung-Galaxy-Note10+.html">
+            <img src="samsung/Samsung-Galaxy-Note10+.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a
+              href="samsungpages/Samsung-Galaxy-Note10+.html"
+              class="productName"
+              >Samsung Galaxy Note10+</a
+            >
+          </h3>
+          <span class="price">2111,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="samsungpages/Samsung-Galaxy-Note10+.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts samsung android 2019">
+        <div class="rating-area">
+          <input type="radio" id="Samsung5_5" name="Sams5" value="5" />
+          <label for="Samsung5_5"></label>
+          <input type="radio" id="Samsung5_4" name="Sams5" value="4" />
+          <label for="Samsung5_4"></label>
+          <input type="radio" id="Samsung5_3" name="Sams5" value="3" />
+          <label for="Samsung5_3"></label>
+          <input type="radio" id="Samsung5_2" name="Sams5" value="2" />
+          <label for="Samsung5_2"></label>
+          <input type="radio" id="Samsung5_1" name="Sams5" value="1" />
+          <label for="Samsung5_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="samsungpages/Samsung-Galaxy-A70.html">
+            <img src="samsung/Samsung-Galaxy-A70.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="samsungpages/Samsung-Galaxy-A70.html" class="productName"
+              >Samsung Galaxy A70</a
+            >
+          </h3>
+          <span class="price"> 764,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="samsungpages/Samsung-Galaxy-A70.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Xiaomi-->
+      <div class="filterProducts xiaomi android 2020">
+        <div class="rating-area">
+          <input type="radio" id="Xiaomi1_5" name="Xiaomi1" value="5" />
+          <label for="Xiaomi1_5"></label>
+          <input type="radio" id="Xiaomi1_4" name="Xiaomi1" value="4" />
+          <label for="Xiaomi1_4"></label>
+          <input type="radio" id="Xiaomi1_3" name="Xiaomi1" value="3" />
+          <label for="Xiaomi1_3"></label>
+          <input type="radio" id="Xiaomi1_2" name="Xiaomi1" value="2" />
+          <label for="Xiaomi1_2"></label>
+          <input type="radio" id="Xiaomi1_1" name="Xiaomi1" value="1" />
+          <label for="Xiaomi1_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="xiaomipages/Xiaomi-redmi-note-9s.html">
+            <img src="xiaomi/xiaomi-redmi-note-9s.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="xiaomipages/Xiaomi-redmi-note-9s.html" class="productName"
+              >Xiaomi Redmi Note 9S</a
+            >
+          </h3>
+          <span class="price"> 649,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="xiaomipages/Xiaomi-redmi-note-9s.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts xiaomi android 2019">
+        <div class="rating-area">
+          <input type="radio" id="Xiaomi2_5" name="Xiaomi2" value="5" />
+          <label for="Xiaomi2_5"></label>
+          <input type="radio" id="Xiaomi2_4" name="Xiaomi2" value="4" />
+          <label for="Xiaomi2_4"></label>
+          <input type="radio" id="Xiaomi2_3" name="Xiaomi2" value="3" />
+          <label for="Xiaomi2_3"></label>
+          <input type="radio" id="Xiaomi2_2" name="Xiaomi2" value="2" />
+          <label for="Xiaomi2_2"></label>
+          <input type="radio" id="Xiaomi2_1" name="Xiaomi2" value="1" />
+          <label for="Xiaomi2_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="xiaomipages/Xiaomi-Redmi-Note-8.html">
+            <img src="xiaomi/Xiaomi-Redmi-Note-8.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a href="xiaomipages/Xiaomi-Redmi-Note-8.html" class="productName"
+              >Xiaomi Redmi Note 8</a
+            >
+          </h3>
+          <span class="price"> 460,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="xiaomipages/Xiaomi-Redmi-Note-8.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts xiaomi android 2019">
+        <div class="rating-area">
+          <input type="radio" id="Xiaomi3_5" name="Xiaomi3" value="5" />
+          <label for="Xiaomi3_5"></label>
+          <input type="radio" id="Xiaomi3_4" name="Xiaomi3" value="4" />
+          <label for="Xiaomi3_4"></label>
+          <input type="radio" id="Xiaomi3_3" name="Xiaomi3" value="3" />
+          <label for="Xiaomi3_3"></label>
+          <input type="radio" id="Xiaomi3_2" name="Xiaomi3" value="2" />
+          <label for="Xiaomi3_2"></label>
+          <input type="radio" id="Xiaomi3_1" name="Xiaomi3" value="1" />
+          <label for="Xiaomi3_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="xiaomipages/Xiaomi-Redmi-Note-8-Pro.html">
+            <img src="xiaomi/Xiaomi-Redmi-Note-8-Pro.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a
+              href="xiaomipages/Xiaomi-Redmi-Note-8-Pro.html"
+              class="productName"
+            >
+              Xiaomi Redmi Note 8 Pro</a
+            >
+          </h3>
+          <span class="price"> 553,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="xiaomipages/Xiaomi-Redmi-Note-8-Pro.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts xiaomi android 2019">
+        <div class="rating-area">
+          <input type="radio" id="Xiaomi4_5" name="Xiaomi4" value="5" />
+          <label for="Xiaomi4_5"></label>
+          <input type="radio" id="Xiaomi4_4" name="Xiaomi4" value="4" />
+          <label for="Xiaomi4_4"></label>
+          <input type="radio" id="Xiaomi4_3" name="Xiaomi4" value="3" />
+          <label for="Xiaomi4_3"></label>
+          <input type="radio" id="Xiaomi4_2" name="Xiaomi4" value="2" />
+          <label for="Xiaomi4_2"></label>
+          <input type="radio" id="Xiaomi4_1" name="Xiaomi4" value="1" />
+          <label for="Xiaomi4_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="xiaomipages/Xiaomi-Redmi-8A.html">
+            <img src="xiaomi/Xiaomi-Redmi-8A.jpg" class="openProductPage" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a class="productName" href="xiaomipages/Xiaomi-Redmi-8A.html"
+              >Xiaomi Redmi 8A</a
+            >
+          </h3>
+          <span class="price"> 279,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="xiaomipages/Xiaomi-Redmi-8A.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterProducts xiaomi android 2019">
+        <div class="rating-area">
+          <input type="radio" id="Xiaomi5_5" name="Xiaomi5" value="5" />
+          <label for="Xiaomi5_5"></label>
+          <input type="radio" id="Xiaomi5_4" name="Xiaomi5" value="4" />
+          <label for="Xiaomi5_4"></label>
+          <input type="radio" id="Xiaomi5_3" name="Xiaomi5" value="3" />
+          <label for="Xiaomi5_3"></label>
+          <input type="radio" id="Xiaomi5_2" name="Xiaomi5" value="2" />
+          <label for="Xiaomi5_2"></label>
+          <input type="radio" id="Xiaomi5_1" name="Xiaomi5" value="1" />
+          <label for="Xiaomi5_1"></label>
+        </div>
+        <div class="product-img">
+          <a href="xiaomipages/Xiaomi-Redmi-Note-7.html">
+            <img src="xiaomi/Xiaomi-Redmi-Note-7.jpg" />
+          </a>
+        </div>
+        <div class="product-list">
+          <h3>
+            <a class="productName" href="xiaomipages/Xiaomi-Redmi-Note-7.html"
+              >Xiaomi Redmi Note 7</a
+            >
+          </h3>
+          <span class="price"> 439,00 р.</span>
+          <div class="actions">
+            <div class="add-to-cart">
+              <a href="" class="cart-button">
+                <img src="images/iconBasket.png" />
+              </a>
+            </div>
+            <div class="add-to-links">
+              <a
+                href="xiaomipages/Xiaomi-Redmi-Note-7.html#comment"
+                class="comments"
+              >
+                <img src="images/comments.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <div class="podval">
+      <div class="inf">
+        <ul>
+          <li>
+            <a href="" class="is-active" title="Главная страница">
+              Главная страница
+            </a>
+          </li>
+          <br />
+          <li>
+            <a href="" class="is-active" title="Контакты">
+              Контакты
+            </a>
+          </li>
+          <br />
+          <li>
+            <a href="" class="is-active" title="О нас">
+              О нас
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="socnetwork">
+        <div class="titleNetworks">
+          Мы в социальных сетях:
+        </div>
+        <div class="icons">
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="iconetwork"
+            title="Smartphone store Facebook"
+          >
+            <img src="images/fb.png" class="fb" />
+            <img src="images/fb2.png" class="fb2"
+          /></a>
+        </div>
+        <div class="icons">
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="iconetwork"
+            title="Smartphone store Twitter"
+          >
+            <img src="images/twitter.png" class="fb" />
+            <img src="images/twitter2.png" class="fb2"
+          /></a>
+        </div>
+        <div class="icons">
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="iconetwork"
+            title="Smartphone store Instagram"
+          >
+            <img src="images/inst.png" class="fb" />
+            <img src="images/inst2.png" class="fb2"
+          /></a>
+        </div>
+        <div class="icons">
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="iconetwork"
+            title="Smartphone store Linkedin"
+          >
+            <img src="images/linked.png" class="fb" />
+            <img src="images/linked2.png" class="fb2" />
+          </a>
+        </div>
+      </div>
+      <div class="inf2">
+        <p>Copyright © 2020 Smartphone store</p>
+      </div>
+    </div>
+  </body>
+</html>

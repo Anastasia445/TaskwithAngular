@@ -1,0 +1,301 @@
+* {
+  margin: auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: #2f2f2f;
+  color: #f3f3f3;
+}
+.mySlides {
+  display: none;
+}
+.slideshow-container img {
+  vertical-align: middle;
+  height: 400px;
+}
+.slideshow-container {
+  position: relative;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 5px 2px;
+  background-color: #bbb;
+  border-radius: 20%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.header img {
+  cursor: pointer;
+}
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(71, 60, 60, 0.842);
+  height: 60px;
+}
+.iconSite img {
+  height: 50px;
+  width: 50px;
+  margin: 5px 0 0 10px;
+}
+.dropdown img {
+  height: 35px;
+  width: 35px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 85%;
+  top: -40px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: rgba(37, 30, 30, 0.651);
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: rgb(11, 112, 20);
+}
+.iconBasket img {
+  height: 35px;
+  width: 35px;
+}
+.iconBasket {
+  margin-top: -40px;
+  margin-left: 92%;
+}
+.product-item img {
+  width: 400px;
+  height: 400px;
+  margin: 0 10%;
+}
+.product-item {
+  font-family: Arial, Helvetica, sans-serif;
+  /*display: none;*/
+}
+.row {
+  display: flex;
+}
+.product-img {
+  cursor: pointer;
+  flex: 40%;
+}
+.product-list {
+  flex: 60%;
+  margin-top: 40px;
+}
+.productName {
+  font-size: 2em;
+  text-align: left;
+  margin: 5px 0;
+}
+.productPrice {
+  margin: 30px 5px;
+  font-size: 1.5em;
+  text-align: left;
+}
+.buttonBuy {
+  margin: 100px 0;
+}
+.buy {
+  outline: none;
+  cursor: pointer;
+  padding: 20px 80px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgb(159, 235, 149) 0%,
+    rgb(22, 241, 77) 51%,
+    rgb(9, 177, 23) 100%
+  );
+  box-shadow: 0 0 20px rgba(5, 92, 23, 0.452);
+}
+table {
+  width: 100%;
+}
+.cur {
+  width: 40%;
+  font-weight: 400;
+}
+.unit {
+  height: 30px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1em;
+  color: rgb(54, 55, 56);
+  background-color: rgb(208, 211, 218);
+}
+.unitText {
+  margin: 10px 0 5px 10px;
+}
+.name {
+  overflow: hidden;
+}
+.description {
+  margin: 5px 0 5px 30px;
+}
+.name span {
+  display: inline-block;
+  position: relative;
+}
+.buttonComment {
+  outline: none;
+  cursor: pointer;
+  margin: 10px 10px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgb(159, 235, 149) 0%,
+    rgb(22, 241, 77) 51%,
+    rgb(9, 177, 23) 100%
+  );
+  box-shadow: 0 0 5px rgba(5, 92, 23, 0.452);
+}
+.outputCommemment {
+  width: 98%;
+  height: 40px;
+  background-color: rgba(94, 245, 107, 0.897);
+  padding: 5px 0 5px 5px;
+  color: rgb(19, 100, 25);
+  border-radius: 5px;
+  margin: 10px;
+}
+.outputCommemmentName {
+  width: 98%;
+  height: 40px;
+  background-color: rgb(85, 238, 243);
+  padding: 5px 0 5px 5px;
+  color: rgb(22, 107, 110);
+  border-radius: 5px;
+  margin: 10px;
+}
+.outputCommemmentDate {
+  margin: 15px 50px;
+  text-align: right;
+}
+.form-group {
+  margin: 5px 0 0 15px;
+}
+hr {
+  width: 98%;
+  background-color: #000000;
+}
+.label {
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.labels {
+  margin-left: 5px;
+  font-weight: 600;
+}
+textarea {
+  width: 98%;
+  height: 200px;
+  resize: none;
+  outline-color: rgb(11, 112, 20);
+}
+input[type="text"] {
+  outline-color: rgb(11, 112, 20);
+  width: 98%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+}
+.podval {
+  margin-top: 10%;
+  max-width: 100%;
+  height: 300px;
+  display: block;
+  background-color: rgb(11, 112, 20);
+}
+.sidenav a:hover,
+a:focus,
+a:active {
+  color: #00afee;
+  outline: none;
+}
+.podval a:hover,
+a:focus,
+a:active {
+  color: #00afee;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+  background-color: transparent;
+}
+.podval a {
+  color: rgb(184, 179, 179);
+}
+li {
+  list-style-type: none;
+}
+.titleNetworks {
+  margin: 0 12%;
+  font-size: 1.4em;
+  color: rgb(184, 179, 179);
+}
+.inf {
+  box-sizing: border-box;
+  padding-top: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+.socnetwork {
+  font-family: sans-serif;
+  padding-left: 70%;
+  margin-top: -10%;
+  box-sizing: border-box;
+}
+.fb2 {
+  display: none;
+}
+.icons:hover .fb2 {
+  display: inline-block;
+}
+.fb {
+  display: inline-block;
+}
+.icons:hover .fb {
+  display: none;
+}
+.icons {
+  padding-left: 11%;
+  margin-top: 4%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.inf2 {
+  margin-top: 14%;
+  margin-left: 40%;
+  display: block;
+  box-sizing: border-box;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: rgb(184, 179, 179);
+}

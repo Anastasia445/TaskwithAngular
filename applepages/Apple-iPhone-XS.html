@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../productsPage.css" media="all" />
+    <link rel="shortcut icon" href="../images/icon.jpg" type="image/png" />
+    <title>Smartphone Store</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="iconSite">
+        <a href="../mainpage.html" title="Smartphone Store">
+          <img src="../images/icon.jpg" />
+        </a>
+      </div>
+    </div>
+    <!-- product list-->
+    <div class="product-item">
+      <div class="row">
+        <div class="product-img">
+          <img src="../apple/Apple-iPhone-XS.jpg" title="Apple iPhone XS" />
+        </div>
+        <div class="product-list">
+          <div class="productName">
+            <b>
+              Смартфон <br />
+              Apple iPhone XS
+            </b>
+          </div>
+          <div class="productPrice">
+            Всего за 1999,00 р.
+          </div>
+          <div class="buttonBuy">
+            <input
+              type="submit"
+              title="Перейти к покупке"
+              name="buy"
+              class="buy"
+              value="Купить"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productDescription">
+      <table>
+        <tr class="unit">
+          <th colspan="2"><span class="unitText">Основное</span></th>
+        </tr>
+        <tr>
+          <td class="name">
+            <span class="description">Дата выхода на рынок:</span>
+          </td>
+          <td class="cur">2018г.</td>
+        </tr>
+        <tr>
+          <td class="name">
+            <span class="description">Операционная система</span>
+          </td>
+          <td class="cur">Apple iOS</td>
+        </tr>
+        <tr>
+          <td class="name">
+            <span class="description">Оперативная память</span>
+          </td>
+          <td class="cur">4 ГБ</td>
+        </tr>
+        <tr>
+          <td class="name"><span class="description">Флэш-память </span></td>
+          <td class="cur">64 ГБ</td>
+        </tr>
+        <tr>
+          <td class="name">
+            <span class="description">Количество точек матрицы</span>
+          </td>
+          <td class="cur">12 Мп + 12Мп</td>
+        </tr>
+        <tr class="unit">
+          <th colspan="2"><span class="unitText">Подробнее</span></th>
+        </tr>
+        <tr>
+          <td class="name"><span class="description">Процессор</span></td>
+          <td class="cur">
+            Apple A12 Bionic
+          </td>
+        </tr>
+        <tr>
+          <td class="name">
+            <span class="description">Тактовая частота процессора </span>
+          </td>
+          <td class="cur">2 490 МГц</td>
+        </tr>
+        <tr>
+          <td class="name">
+            <span class="description">Количество ядер</span>
+          </td>
+          <td class="cur">6 (2+4)</td>
+        </tr>
+        <tr>
+          <td class="name"><span class="description">Техпроцесс </span></td>
+          <td class="cur">7 нм</td>
+        </tr>
+        <tr>
+          <td class="name">
+            <span class="description">Частота ГПУ </span>
+          </td>
+          <td class="cur">-</td>
+        </tr>
+        <tr>
+          <td class="name">
+            <span class="description">Технология экрана</span>
+          </td>
+          <td class="cur">
+            AMOLED
+          </td>
+        </tr>
+        <tr>
+          <td class="name">
+            <span class="description">Характеристики камеры</span>
+          </td>
+          <td class="cur">
+            телеобъектив (f/2.4)
+          </td>
+        </tr>
+        <tr>
+          <td class="name">
+            <span class="description">Диафрагма основной камеры</span>
+          </td>
+          <td class="cur">f/1.8</td>
+        </tr>
+      </table>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="label">
+        <h2>
+          Комментарии:
+        </h2>
+        <br />
+      </div>
+      <div>
+        <div id="comment-field"></div>
+      </div>
+      <div>
+        <form>
+          <div class="form-group">
+            <a name="comment"></a>
+            <label for="comment-name" class="labels">Имя:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="comment-name"
+              placeholder="Введите ваше имя"
+            />
+          </div>
+          <div class="form-group">
+            <label for="comment-body" class="labels">Комментарий:</label>
+            <textarea
+              type="password"
+              class="form-control"
+              id="comment-body"
+              placeholder="Ввведите ваш комментарий"
+            ></textarea>
+          </div>
+          <div class="form-group form-check text-right">
+            <button
+              type="submit"
+              onclick="addcomments()"
+              id="comment-add"
+              class="buttonComment"
+            >
+              Добавить комментарий
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../header_slideshow.js"></script>
+
+    <!--Footer-->
+    <div class="podval">
+      <div class="inf">
+        <ul>
+          <li>
+            <a href="" class="is-active" title="Главная страница">
+              Главная страница
+            </a>
+          </li>
+          <br />
+          <li>
+            <a href="" class="is-active" title="Контакты">
+              Контакты
+            </a>
+          </li>
+          <br />
+          <li>
+            <a href="" class="is-active" title="О нас">
+              О нас
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="socnetwork">
+        <div class="titleNetworks">
+          Мы в социальных сетях:
+        </div>
+        <div class="icons">
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="iconetwork"
+            title="Smartphone store Facebook"
+          >
+            <img src="../images/fb.png" class="fb" />
+            <img src="../images/fb2.png" class="fb2"
+          /></a>
+        </div>
+        <div class="icons">
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="iconetwork"
+            title="Smartphone store Twitter"
+          >
+            <img src="../images/twitter.png" class="fb" />
+            <img src="../images/twitter2.png" class="fb2"
+          /></a>
+        </div>
+        <div class="icons">
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="iconetwork"
+            title="Smartphone store Instagram"
+          >
+            <img src="../images/inst.png" class="fb" />
+            <img src="../images/inst2.png" class="fb2" />
+          </a>
+        </div>
+        <div class="icons">
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="iconetwork"
+            title="Smartphone store Linkedin"
+          >
+            <img src="../images/linked.png" class="fb" />
+            <img src="../images/linked2.png" class="fb2" />
+          </a>
+        </div>
+      </div>
+      <div class="inf2">
+        <p>Copyright © 2020 Smartphone store</p>
+      </div>
+    </div>
+  </body>
+</html>
